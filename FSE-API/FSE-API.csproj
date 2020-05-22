@@ -14,4 +14,7 @@
     <Folder Include="DBMessages\" />
     <Folder Include="Repository\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RavenDB.Client" Version="4.2.102" />
+  </ItemGroup>
 </Project>
