@@ -13,6 +13,7 @@
     <Folder Include="Database\" />
     <Folder Include="DBMessages\" />
     <Folder Include="Repository\" />
+    <Folder Include="Service\ProfileMapping\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="RavenDB.Client" Version="4.2.102" />
@@ -22,5 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="DBMessages\ModifyUserMsg.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
   </ItemGroup>
 </Project>

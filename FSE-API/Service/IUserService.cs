@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FSE_API.DBMessages;
 using FSE_API.Model;
 
-namespace FSE_API.Controllers
+namespace FSE_API.Service
 {
     public interface IUserService
     {

@@ -15,6 +15,7 @@ namespace FSE_API.Service
         private readonly IProjectTask projectTaskRepo;
         private readonly ILogger<TaskProjectService> logger;
         private readonly IMapper mapper;
+
         public TaskProjectService(IProjectTask projectTaskRepo,
             ILogger<TaskProjectService> logger, IMapper mapper)
         {
@@ -73,6 +74,7 @@ namespace FSE_API.Service
         {
             return await projectTaskRepo.SuspendProject(projectId);
         }
+
         public async Task<List<ListTask>> GetAllActiveTask(string projectId)
         {
             var taskUservo = await projectTaskRepo.GetAllActiveTask(projectId);
@@ -85,7 +87,6 @@ namespace FSE_API.Service
                     parentTasklst = taskUservo?.Select<UserTaskVO, TaskProject>(vo => vo?.Tasks)
                                                .Where(task => parentTaskIds.Contains(task.Id))
                                                .ToList();
-
                 var result = new List<ListTask>();
                 taskUservo.ForEach((item) =>
                 {
@@ -114,9 +115,6 @@ namespace FSE_API.Service
                 return result;
             }
             return null;
-
-
-
         }
 
         public async Task<Tuple<bool, string>> AddTask(AddTask projTask)
@@ -134,7 +132,7 @@ namespace FSE_API.Service
             return new Tuple<bool, string>(false, "validation failures");
         }
 
-        public async Task<Tuple<bool, string>> EditTask(ModelProject projTask)
+        public async Task<Tuple<bool, string>> EditTask(TaskModal projTask)
         {
             if ((projTask.EndDate > DateTime.MinValue) && (projTask.StartDate > DateTime.MinValue)
                    && (projTask.StartDate > projTask.EndDate))
@@ -144,7 +142,7 @@ namespace FSE_API.Service
             if (Validator.TryValidateObject(projTask, validationContext, validationResults))
             {
                 var taskDO = mapper.Map<TaskProject>(projTask);
-                return await projectTaskRepo.EditTask(projTask.ProjId, taskDO);
+                return await projectTaskRepo.EditTask(projTask.ProjectId, taskDO);
             }
             return new Tuple<bool, string>(false, "validation failures");
         }
