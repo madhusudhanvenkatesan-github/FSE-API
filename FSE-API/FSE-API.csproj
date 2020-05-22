@@ -6,4 +6,12 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Service\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Model\" />
+    <Folder Include="Database\" />
+    <Folder Include="DBMessages\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
 </Project>
