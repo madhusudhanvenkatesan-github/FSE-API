@@ -1,5 +1,4 @@
-﻿using System;
-namespace FSE_API.Model
+﻿namespace FSE_API.Model
 {
     public class UserTaskVO
     {
