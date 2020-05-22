@@ -1,6 +1,6 @@
 ﻿namespace FSE_API.DBMessages
 {
-    internal class userSearchCriteria
+    public class userSearchCriteria
     {
         public string EmployeeID { get; set; }
         public string LastName { get; set; }

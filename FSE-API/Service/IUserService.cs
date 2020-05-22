@@ -8,11 +8,11 @@ namespace FSE_API.Controllers
 {
     public interface IUserService
     {
-        Task<Tuple<bool, string>> Add(UserAddMsg userAdd);
-        Task<Tuple<bool, string>> Edit(UserModMsg userMod);
-        Task<List<PMOUser>> GetAllUser();
-        Task<List<PMOUser>> GetUserByCriteria(UserSearchCriteria userSearchCriteria);
-        Task<PMOUser> GetUserByEmployeeId(string employeeId);
+        Task<Tuple<bool, string>> Add(AddUserMsg userAdd);
+        Task<Tuple<bool, string>> Edit(ModelUserMsg userMod);
+        Task<List<PMUser>> GetAllUser();
+        Task<List<PMUser>> GetUserByCriteria(userSearchCriteria userSearchCriteria);
+        Task<PMUser> GetUserByEmployeeId(string employeeId);
         Task<bool> Delete(string EmployeeId);
     }
 }

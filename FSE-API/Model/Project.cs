@@ -13,6 +13,6 @@ namespace FSE_API.Model
         public string PMId { get; set; }
         public int Status { get; set; }
         public int MaxTaskCount { get; set; } = 0;
-        public List<ProjTask> ProjectTasks { get; set; } = new List<ProjTask>();
+        public List<TaskProject> ProjectTasks { get; set; } = new List<TaskProject>();
     }
 }
