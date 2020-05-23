@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSE.API</name>
+    </assembly>
+    <members>
+        <member name="M:FSE.API.Controllers.ProjectController.GetAllActiveProject">
+            <summary>
+            Get All active projects
+            </summary>
+            <returns>List of active projects</returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.GetProjectByName(System.String)">
+            <summary>
+            Get a set of project which has the word that is passed as parameter
+            </summary>
+            <param name="prjNm"> words contained in projetc</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.AddProject(FSE.API.Messages.ProjectAdd)">
+            <summary>
+            Add project 
+            </summary>
+            <param name="projectAdd">Details of project to be added</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.EditProject(FSE.API.Messages.ProjectMod)">
+            <summary>
+            Edit project
+            </summary>
+            <param name="projectMod">Edition details</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.SuspendProject(System.String)">
+            <summary>
+            Supend an active project
+            </summary>
+            <param name="projId">Id of the project that needs to be suspended</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.GetAllActiveTask(System.String)">
+            <summary>
+            Get all active task for a project
+            </summary>
+            <param name="projId">Project Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.AddTask(FSE.API.Messages.TaskAdd)">
+            <summary>
+            Add Task
+            </summary>
+            <param name="taskAdd">Detail of tak to be added</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.EditTask(FSE.API.Messages.TaskMod)">
+            <summary>
+            Edit task
+            </summary>
+            <param name="taskMod">Detail of tak to be edited</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.ProjectController.EndTask(System.String,System.String)">
+            <summary>
+            Ends an active task
+            </summary>
+            <param name="projId">Project id</param>
+            <param name="tskId">Task id</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.SearchUser(System.String,System.String,System.String)">
+            <summary>
+            Search user based on Parameter. At least one parameter should be non empty
+            </summary>
+            <param name="empId">Employee Id</param>
+            <param name="lName">Last name</param>
+            <param name="fName">First Name</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.GetEmployeeById(System.String)">
+            <summary>
+            Get a user based on employee id
+            </summary>
+            <param name="empId">Employee id</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.GetAllEmployee">
+            <summary>
+            Gets all the employee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.Post(FSE.API.Messages.UserAddMsg)">
+            <summary>
+            Add User
+            </summary>
+            <param name="userAdd">Details of the user to be added</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.Put(FSE.API.Messages.UserModMsg)">
+            <summary>
+            Edit user
+            </summary>
+            <param name="userMod">Details of user that need to be edited</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSE.API.Controllers.UserController.Delete(System.String)">
+            <summary>
+            Deletes a user
+            </summary>
+            <param name="empId">Employee id of the user that needs to be deleted</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
