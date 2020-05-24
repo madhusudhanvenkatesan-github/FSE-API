@@ -1,11 +1,8 @@
 ﻿using FSE.API.DomainModel;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 namespace FSE.API.Test.DomainModel
 {
-    public class PMOUserTest
+    public class PMUserTest
     {
         [Fact]
         public void GetterSetter()
