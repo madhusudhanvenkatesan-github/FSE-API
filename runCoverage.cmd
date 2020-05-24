@@ -1,2 +1,3 @@
 dotnet test --collect:"XPlat Code Coverage" -r "_codeCoverage"
-reportgenerator -reports:"_codecoverage/d854582c-adb9-4fb7-b396-e0703f9545a2/coverage.cobertura.xml" -targetdir:"_codecoverage/reports"
+echo "##vso[task.prependpath]$HOME/.dotnet/tools"
+reportgenerator -reports:"_codecoverage/35ffd839-2bb9-4c14-9a18-4e1df632357a/coverage.cobertura.xml" -targetdir:"_codecoverage/reports"
