@@ -14,7 +14,7 @@
     <StartAction>Project</StartAction>
     <ExternalConsole>true</ExternalConsole>
     <LaunchUrl>swagger</LaunchUrl>
-    <ApplicationURL>http://localhost:5002</ApplicationURL>
+    <ApplicationURL>http://localhost:5000</ApplicationURL>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />

@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2B25D090-B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSE.API.Test", "test\FSE.API.Test\FSE.API.Test.csproj", "{88195EA6-97E7-4A03-A13C-A592EC88E60E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSE.API", "src\FSE.API\FSE.API.csproj", "{60B9EC18-8E4D-4C50-9CEC-D23BE2C3172A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSE.API", "src\FSE.API\FSE.API.csproj", "{60B9EC18-8E4D-4C50-9CEC-D23BE2C3172A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00745332-3620-4618-BE69-A7DE6E43F821}"
 	ProjectSection(SolutionItems) = preProject
 		azure-pipelines.yml = azure-pipelines.yml
 		runCoverage.cmd = runCoverage.cmd
 		runCoverage.sh = runCoverage.sh
+		jmeter\jmeter.jmx = jmeter\jmeter.jmx
+		jmeter_result\jmeter_result.csv = jmeter_result\jmeter_result.csv
 	EndProjectSection
 EndProject
 Global
